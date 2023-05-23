@@ -5,14 +5,14 @@
 - Create Python objects using SQL database records.
 - Create SQL database records using Python objects.
 
-***
+---
 
 ## Key Vocab
 
 - **Object-Relational Mapping (ORM)**: a technique used to convert database
-records into objects in an object-oriented language.
+  records into objects in an object-oriented language.
 
-***
+---
 
 ## Introduction
 
@@ -25,7 +25,7 @@ objects to a database. In order to persist that data efficiently and in an
 organized manner, we need to first map or equate our Python class to a database
 table.
 
-***
+---
 
 ## Writing an ORM
 
@@ -215,7 +215,7 @@ Success!
 </details>
 <br/>
 
-***
+---
 
 ## Mapping Class Instances to Table Rows
 
@@ -378,7 +378,7 @@ class Song:
                 album TEXT
             )
         """
-        
+
         CURSOR.execute(sql)
 
     def save(self):
@@ -419,9 +419,9 @@ When we `INSERT` the data concerning a particular `Song` instance into our
 database table, we create a new row in that table. That row would look something
 like this:
 
-| id | name | album |
-| --- | --- | --- |
-| 1 | Hello | 25 |
+| id  | name  | album |
+| --- | ----- | ----- |
+| 1   | Hello | 25    |
 
 Notice that the database table's row has a column for `name`, `album` and also
 `id`. Recall that we created our table to have a column for the primary key, ID,
@@ -550,7 +550,7 @@ assignment using `git`.
 > pass- SQLite sometimes "locks" databases that have been accessed by multiple
 > modules.**
 
-***
+---
 
 ## Conclusion
 
@@ -572,7 +572,7 @@ the cookie and the picture are still two different things. After you eat the
 cookie, or in our case after you delete the Python object, the database will not
 change at all until the record is deleted, and vice versa.
 
-***
+---
 
 ## Solution Code
 
@@ -617,7 +617,7 @@ class Song:
 
 ```
 
-***
+---
 
 ## Resources
 
